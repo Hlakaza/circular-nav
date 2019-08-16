@@ -1,15 +1,17 @@
 <h2 >Generic Circular navigation</h2>
 <div class="demo-area  clearfix min-height">
-<ul class="menu-wraper">
-    <li>Center</li>
-    <li class="menu-item">Item 1</li>
-    <li class="menu-item">Item 2</li>
-    <li class="menu-item">Item 3</li>
-    <li class="menu-item">Item 4</li>
-    <li class="menu-item">Item 5</li>
-    <li class="menu-item">Item 6</li>
-    <li class="menu-item">Item 7</li>
-    <li class="menu-item">Item 8</li>
-    <li class="menu-item">Item 9</li>
-</ul>
+  <div class="circular-menu" [class.active]="isOpen">
+    <ul class="menu-wraper">
+        <li (click)="toggle()" class="floating-btn">Center</li>
+        <li class="menu-item">Item 1</li>
+        <li class="menu-item">Item 2</li>
+        <li class="menu-item">Item 3</li>
+        <li class="menu-item">Item 4</li>
+        <li class="menu-item">Item 5</li>
+        <li class="menu-item">Item 6</li>
+        <li class="menu-item">Item 7</li>
+        <li class="menu-item">Item 8</li>
+        <li class="menu-item">Item 9</li>
+    </ul>
+  </div>
 </div>

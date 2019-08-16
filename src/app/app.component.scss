@@ -15,22 +15,32 @@ h1 {
 .menu-wraper {
   position: absolute;
   position: absolute;
-  top: 50%; // for demo purposes only change this to suit your needs
-  left: 50%; // for demo purposes only change this to suit your needs
+  top: 20%; // for demo purposes only change this to suit your needs
+  left: 30%; // for demo purposes only change this to suit your needs
   transform: translate(-50%); // for demo purposes only change this to suit your needs
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 30em;
+  height: 30em;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: pink;
   animation-name: spin;
   animation-duration: 200s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   .menu-item {
     position: absolute;
-    -webkit-transition: all 2s linear;
-    -moz-transition: all 2s linear;
-    transition: all 2s linear;
-
+    // -webkit-transition: all 2s linear;
+    // -moz-transition: all 2s linear;
+    // transition: all 2s linear;
+    background: blueviolet;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
     // &:nth-child(2) {
     //   background: red;
     //   transform: rotate(-180deg) translate(20em) rotate(180deg) !important
@@ -38,6 +48,17 @@ h1 {
 
 
   }
+}
+.floating-btn{
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .clearfix {
