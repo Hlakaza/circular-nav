@@ -1,0 +1,41 @@
+body {
+  background: #ddd;
+
+}
+h1 {
+  text-align: center;
+  display: block;
+}
+.container{
+  max-width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu-wraper {
+  position: absolute;
+  position: absolute;
+  top: 50%; // for demo purposes only change this to suit your needs
+  left: 50%; // for demo purposes only change this to suit your needs
+  transform: translate(-50%); // for demo purposes only change this to suit your needs
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-item {
+  position: absolute;
+  -webkit-transition: all 2s linear;
+  -moz-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.clearfix {
+  overflow: hidden;
+  clear: both;
+}
+
+.demo-area {
+  position: relative;
+  min-height: 1000px;
+  margin: auto;
+}
