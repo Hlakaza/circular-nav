@@ -9,7 +9,7 @@ export class AppComponent implements AfterViewInit {
   title = 'circularNav';
   type = 1;
   radius = '20em'; // distance from center
-  start = -90; // shift start from 0
+  start = -180; // shift start from 0
 
   constructor() {}
 
@@ -22,7 +22,7 @@ export class AppComponent implements AfterViewInit {
       console.log(elements);
       elements.forEach((item, index) => {
         const rotate = slice * index + this.start;
-        const rotateReverse = 0;
+        const rotateReverse = 180;
         item.setAttribute('style', `transform: rotate(${rotate}deg) translate(${this.radius}) rotate(${rotateReverse}deg)`);
      });
     }
