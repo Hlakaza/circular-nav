@@ -1,0 +1,126 @@
+$yellow: #FFEE00;
+$gray-200: #8e98cd;
+$blue:    #003DB5;
+$light-blue: #3f5cc6;
+$dark-blue: #061556;
+
+body {
+  background: #ddd;
+
+}
+
+.circular-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40em;
+  height: 40em;
+  z-index: 99;
+  &::after {
+    content: "";
+    width: 8em;
+    height: 8em;
+    background:  $blue;
+    position: absolute;
+    z-index: -2;
+    border-radius: 100%;
+    transition: all .3s ease;
+  }
+
+  &.active {
+    &::after {
+      width: 40em;
+      height: 40em;
+      transform: scale3d(1.1, 1.1, 1);
+      transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
+    }
+
+    .menu-wraper {
+      visibility: visible;
+      border: 2px solid $light-blue;
+      .menu-item { 
+        visibility: visible;
+
+        &:after {
+          visibility: visible;
+      }
+      }
+    }
+  }
+}
+
+.menu-wraper {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 22.5em;
+  height: 22.5em;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  .menu-item {
+    visibility: hidden;
+    position: absolute;
+    width: 190px;
+    padding: 14.6px 35px;
+    border-radius: 45px;
+    height: 80px;
+    display: flex;
+    cursor: pointer;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3em;
+    font-size: 20.2px;
+     span {
+       color: $gray-200;
+     }
+     &:after {
+      visibility: hidden;
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 0;
+      border: 5px solid $gray-200;
+      border-radius: 100%;
+      background-color: $blue;
+      top: 50%;
+      transform: translateY(-50%);
+      right: .8em;
+  }
+  &:hover {
+      background-color: $yellow;
+      transition: background-color 200ms ease-in;
+      width: 235px;
+      span{
+        font-size: 24px;
+        color: $dark-blue;
+      }
+      &:after {
+        border-color: $dark-blue;
+        background: transparent;
+      }
+    }
+  }
+}
+
+.floating-btn{
+  width: 100px;
+  height: 100px;
+  background: $blue;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+li {
+  outline: none
+}
