@@ -1,9 +1,9 @@
 <div class="circular-menu" [class.active]="isOpen">
   <ul class="menu-wraper">
       <li (click)="toggle()" class="floating-btn">
-       Center
+        {{ isOpen ? 'Close' :  'Open'}}
       </li>
-      <li [routerLink]="[nav?.url]" data-aos="zoom-in" class="menu-item" *ngFor="let nav of navList">
+      <li [routerLink]="[nav?.url]" class="menu-item" *ngFor="let nav of navList">
           <span>{{nav?.title}}</span>
       </li>
   </ul>
