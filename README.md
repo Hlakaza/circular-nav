@@ -1,5 +1,12 @@
 # CircularNav
 
+I was looking for circular navigation that would be generic. I needed it to display a list of links evenly around the circle regardless of the number of items the list has.<br/>
+
+I could not find a solution for what I needed, Most of the solutions were too complicated, so I decided to build my own that would do the trick.<br/>
+
+If anyone has a better solution to what I created please feel free to add 
+any improvements so it can be better.<br/>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
