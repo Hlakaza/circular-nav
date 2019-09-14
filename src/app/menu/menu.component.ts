@@ -40,16 +40,16 @@ export class MenuComponent implements AfterViewInit {
       const numberOfElements = this.type === 1 ? elements.length : elements.length - 1;
       const slice = (360 * this.type) / numberOfElements;
       // Add rotation to each element
-      elements.forEach((item, index) => {
-        const rotate = slice * index + this.start;
+      for (let i = 0; i < elements.length; i++) {
+        const rotate = slice * i + this.start;
         const rotateReverse = 180;
-        item.setAttribute(
+        elements[i].setAttribute(
           'style',
           `transform: rotate(${rotate}deg)
           translate(${this.radius})
           rotate(${rotateReverse}deg)`
         );
-      });
+      }
     }
   }
 }
