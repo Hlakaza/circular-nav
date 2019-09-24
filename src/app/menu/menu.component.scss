@@ -26,6 +26,9 @@ body {
     z-index: -2;
     border-radius: 100%;
     transition: all .3s ease;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%)
   }
 
   &.active {
@@ -34,6 +37,9 @@ body {
       height: 40em;
       transform: scale3d(1.1, 1.1, 1);
       transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%)
     }
 
     .menu-wraper {
