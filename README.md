@@ -7,7 +7,15 @@ I could not find a solution for what I needed, Most of the solutions were too co
 If anyone has a better solution to what I created please feel free to add 
 any improvements so it can be better.<br/>
 
+## Project
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+
+Clone this project using `git clone https://github.com/Hlakaza/circular-nav.git`
+
+Navigate to root folder `cd circular-nav`
+
+Install dependencies `npm install`
+
 
 ## Development server
 
